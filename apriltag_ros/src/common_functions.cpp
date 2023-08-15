@@ -119,8 +119,7 @@ TagDetector::~TagDetector()
   apriltag_detector_destroy(td_);
 
   // Free memory associated with the array of tag detections
-  if(detections_)
-  {
+  if (detections_) {
     apriltag_detections_destroy(detections_);
   }
 
